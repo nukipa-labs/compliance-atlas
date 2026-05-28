@@ -88,8 +88,8 @@ export default async function PostPage({ params }: Props) {
         <div className="ca-article__body">
           <PostBody
             body={post.body ?? ''}
-            components={post.components ?? []}
-            sources={post.sources ?? []}
+            components={(post.components ?? []) as Parameters<typeof PostBody>[0]['components']}
+            sources={(post.sources ?? []) as Parameters<typeof PostBody>[0]['sources']}
             postId={post.id}
             lang={post.language ?? undefined}
           />

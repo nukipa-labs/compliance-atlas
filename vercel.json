@@ -1,0 +1,11 @@
+{
+  "redirects": [
+    { "source": "/articles", "destination": "/blog", "permanent": true },
+    { "source": "/articles/:slug", "destination": "/blog/:slug", "permanent": true },
+    { "source": "/sanders-aoc-bill-would-freeze-us-ai-data-center", "destination": "/blog/sanders-aoc-bill-would-freeze-us-ai-data-center", "permanent": true },
+    { "source": "/transparency-acts-multiply-three-us-house-bills", "destination": "/blog/transparency-acts-multiply-three-us-house-bills", "permanent": true },
+    { "source": "/three-congressional-bills-target-us-export", "destination": "/blog/three-congressional-bills-target-us-export", "permanent": true },
+    { "source": "/wave-of-eu-anti-dumping-regulations-reshapes", "destination": "/blog/wave-of-eu-anti-dumping-regulations-reshapes", "permanent": true },
+    { "source": "/us-and-eu-air-quality-regulation-in-flux-mats", "destination": "/blog/us-and-eu-air-quality-regulation-in-flux-mats", "permanent": true }
+  ]
+}

@@ -57,7 +57,7 @@ export default async function HomePage() {
               View all articles &rarr;
             </Link>
           </div>
-          <div style={styles.articlesGrid}>
+          <div className="articles-grid-home" style={styles.articlesGrid}>
             {posts.map((p) => (
               <ArticleCard key={p.id} post={p} />
             ))}
@@ -73,7 +73,7 @@ export default async function HomePage() {
             View all {TOPICS.length} topics &rarr;
           </Link>
         </div>
-        <div style={styles.topicGrid}>
+        <div className="topic-grid-home" style={styles.topicGrid}>
           {featuredTopics.map((topic) => {
             const jurisdictionLabel =
               topic.jurisdiction === 'eu'

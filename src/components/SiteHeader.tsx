@@ -74,7 +74,7 @@ export function SiteHeader() {
           </Link>
 
           {/* Nav */}
-          <nav style={styles.nav}>
+          <nav className="site-nav" style={styles.nav}>
             {navItems.map((item) => (
               <Link
                 key={item.label}
@@ -92,6 +92,7 @@ export function SiteHeader() {
           {/* Right: hamburger */}
           <div style={styles.right}>
             <button
+              className="site-hamburger"
               style={styles.hamburger}
               aria-label="Toggle menu"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

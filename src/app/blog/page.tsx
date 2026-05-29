@@ -29,12 +29,16 @@ export default async function BlogIndex() {
       {posts.length === 0 ? (
         <p style={styles.empty}>No articles published yet. Check back soon.</p>
       ) : (
-        <div style={styles.grid}>
+        <div className="articles-grid-blog" style={styles.grid}>
           {posts.map((p) => (
             <ArticleCard key={p.id} post={p} />
           ))}
         </div>
       )}
+      <style>{`
+        @media (max-width: 900px) { .articles-grid-blog { grid-template-columns: repeat(2, 1fr) !important; } }
+        @media (max-width: 600px) { .articles-grid-blog { grid-template-columns: 1fr !important; } }
+      `}</style>
     </div>
   );
 }
